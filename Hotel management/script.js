@@ -1,21 +1,11 @@
-const navBtn = document.getElementById('nav-btn');
-const cancelBtn = document.getElementById('cancel-btn');
-const sideNav = document.getElementById('sidenav');
-const modal = document.getElementById('modal');
-
-navBtn.addEventListener("click", function(){
-    sideNav.classList.add('show');
-    modal.classList.add('showModal');
-});
-
-cancelBtn.addEventListener('click', function(){
-    sideNav.classList.remove('show');
-    modal.classList.remove('showModal');
-});
-
-window.addEventListener('click', function(event){
-    if(event.target === modal){
-        sideNav.classList.remove('show');
-        modal.classList.remove('showModal');
+function printResult() {
+  // num1 = Number(document.getElementById("num1").value);
+  num = 5;
+  for (let i = num; i > 0; i--) {
+    for (let j = 1; j <= i; j++) {
+      console.log(j);
     }
-});
+    console.log();
+  }
+}
+// console.log(printResult(5));
