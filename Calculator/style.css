@@ -8,7 +8,10 @@
   width: 80%;
   height: 700px;
   margin: 20px auto;
-  background-image: linear-gradient(rgba(0, 0, 5, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(
+      rgba(209, 209, 234, 0.3),
+      rgba(104, 86, 86, 0.3)
+    ),
     url("./bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,10 +20,55 @@
 #calculator {
   width: 320px;
   height: 520px;
-  background-color: #eaedef;
+  background-color: #c6ccd7;
   margin: 0 auto;
   top: 20px;
   position: relative;
   box-shadow: 5px 5px 15px 5px #51217e;
   border-radius: 5px;
+  color: white;
+}
+
+#result {
+  height: 120px;
+}
+
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  color: #919191;
+  padding-top: 20px;
+  font-size: 15px;
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+#keyboard {
+  height: 400px;
+  color: white;
+}
+
+.operator,
+.number,
+.empty {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  font-weight: bold;
+  border-width: 0;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+button:hover {
+  background-color: #343232;
+  scale: 80%;
 }
